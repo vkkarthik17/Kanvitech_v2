@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Development Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-purple: #5F4B8B;
+      --brand-gold: #fbc02d;
+      --text-dark: #333;
+      --text-light: #fff;
+      --bg-light: #f9f9f9;
+      --transition: 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-dark);
+      background: var(--bg-light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--brand-purple), var(--brand-gold));
+      color: var(--text-light);
+      text-align: center;
+      padding: 50px 20px;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      width: 100%;
+      align-items: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .cta {
+      margin-top: 20px;
+    }
+
+    .cta a {
+      text-decoration: none;
+      background: var(--text-light);
+      color: var(--brand-purple);
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background var(--transition), color var(--transition);
+    }
+
+    .cta a:hover {
+      background: var(--brand-purple);
+      color: var(--text-light);
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 40px;
+      font-family: 'Playfair Display', serif;
+      color: var(--brand-purple);
+    }
+
+    .content {
+  display: flex; /* Flexbox for side-by-side layout */
+  align-items: center; /* Vertically align items */
+  gap: 20px; /* Space between image and text */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.content img {
+  flex: 1 1 50%; /* Limit the image width to 50% of the container */
+  max-width: 100%; /* Prevent the image from exceeding its container */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  height: auto; /* Maintain aspect ratio */
+  width: 10%;
+}
+
+.text {
+  flex: 1 1 50%; /* Limit the text content width to 50% of the container */
+}
+
+    .text h3 {
+      font-size: 1.8rem;
+      color: var(--brand-purple);
+      margin-bottom: 15px;
+    }
+
+    .text p {
+      margin-bottom: 15px;
+    }
+
+    .text a {
+      text-decoration: none;
+      color: var(--brand-gold);
+      font-weight: 600;
+      transition: color var(--transition);
+    }
+
+    .text a:hover {
+      color: var(--brand-purple);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .feature {
+      background: var(--text-light);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature h4 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: var(--brand-purple);
+    }
+
+    .feature p {
+      font-size: 0.9rem;
+      color: var(--text-dark);
+    }
+
+    footer {
+      text-align: center;
+      background: var(--brand-purple);
+      color: var(--text-light);
+      padding: 20px 10px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .content img, .text {
+    flex: 1 1 100%; /* Full width for both image and text */
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Software Development Services</h1>
+  <p>Innovative solutions tailored for your business growth</p>
+  <div class="cta">
+    <a href="#contact">Get Started</a>
+  </div>
+</header>
+
+<section id="cloud-development">
+  <h2 class="section-title">Cloud Application Development</h2>
+  <div class="content">
+    <img src="assets/softwaredev.jpg" alt="Cloud Application Development">
+    <div class="text">
+      <h3>Build for Change, Deliver with Confidence</h3>
+      <p>We deliver applications that are built-for-change, accommodating space for scalability and flexibility throughout the application lifecycle.</p>
+      <p>Our approach ensures centralized hosting, developer freedom, and optimized governance.</p>
+      <a href="#">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<section id="saas-development">
+  <h2 class="section-title">SaaS Application Development</h2>
+  <div class="content">
+    <img src="assets/dve.jpg" alt="SaaS Application Development">
+    <div class="text">
+      <h3>Accelerate Your Time to Market</h3>
+      <p>Our SaaS development services ensure robust architectures with multi-tenant, scalable functionality, enabling seamless integration and cost efficiency.</p>
+      <p>Leverage our expertise to re-architect your existing applications for cloud scalability.</p>
+      <a href="#">Explore SaaS Solutions</a>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <h2 class="section-title">What You Receive</h2>
+  <div class="features">
+    <div class="feature">
+      <h4>Scalable Solutions</h4>
+      <p>Our web development services ensure scalability to meet the growing demands of your business.</p>
+    </div>
+    <div class="feature">
+      <h4>Enhanced Collaboration</h4>
+      <p>Improve communication processes with customized web applications tailored for your needs.</p>
+    </div>
+    <div class="feature">
+      <h4>Robust Integrations</h4>
+      <p>Seamlessly integrate databases, CMS, and other applications for a dynamic experience.</p>
+    </div>
+    <div class="feature">
+      <h4>Interactive Interfaces</h4>
+      <p>Create dynamic and interactive websites with our advanced content management systems.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Kanvitech. All rights reserved.
+</footer>
+
+</body>
+</html>
